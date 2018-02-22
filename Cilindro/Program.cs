@@ -10,17 +10,16 @@ namespace Cilindro
     {
         static void Main(string[] args)
         {
-            const float pi = 3.1415926f;
             string height, rad;
-            float v, sArea, h, r;
+            double v, sArea, h, r;
             Console.WriteLine("Insert height");
             height = Console.ReadLine();
             h = Convert.ToSingle(height);
             Console.WriteLine("Insert radius");
             rad = Console.ReadLine();
             r = Convert.ToSingle(rad);
-            v = pi * r * r * h;
-            sArea = 2 * pi * r * (r + h);
+            v = Math.PI * r * r * h;
+            sArea = 2 * Math.PI * r * (r + h);
             Console.WriteLine("Cilinder's Volume: " + v);
             Console.WriteLine("Cilinder's Surface Area: " + sArea);
             Console.ReadKey();
